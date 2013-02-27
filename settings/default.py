@@ -81,6 +81,9 @@ MINIFY_BUNDLES = {
     },
     'js': {
         'common': (
+            # Google analytics
+            'js/analytics.js',
+
             'js/libs/jquery.min.js',
             'js/libs/jquery-ui.min.js',
             'js/libs/jquery.cookie.js',
@@ -107,11 +110,17 @@ MINIFY_BUNDLES = {
 
         # Release versions feedback
         'feedback': (
+            # Google analytics
+            'js/analytics.js',
+
             'js/libs/jquery.min.js',
             'js/init.js',
             'js/feedback.js',
         ),
         'feedback-mobile': (
+            # Google analytics
+            'js/analytics.js',
+
             'js/feedback-mobile.js',
         ),
     },
