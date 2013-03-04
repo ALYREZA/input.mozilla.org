@@ -42,6 +42,7 @@ fi
 $PYTHON $INPUT_DIR/manage.py collectstatic --noinput --clear
 
 # commit to git for web servers to pull from
+cd /data/sync/input/www/
 git commit -a -m "push to prod"
 
 issue-multi-command input /data/bin/libget/get-php5-www-git.sh
